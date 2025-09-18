@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Starter - Static</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Secure Starter (Static)</h1>
+
+  <!-- Flash messages -->
+  <div id="flash"></div>
+
+  <!-- Register -->
+  <div id="registerSection">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label>Username: <input name="username" required></label><br>
+      <label>Password: <input type="password" name="password" required></label><br>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <!-- Login -->
+  <div id="loginSection">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label>Username: <input name="username" required></label><br>
+      <label>Password: <input type="password" name="password" required></label><br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Notes (after login) -->
+  <div id="appSection" class="hidden">
+    <h2>Welcome, <span id="currentUser"></span></h2>
+    <form id="noteForm">
+      <label>Title: <input name="title" required></label><br>
+      <label>Body: <textarea name="body" required></textarea></label><br>
+      <button type="submit">Save Note</button>
+    </form>
+    <h3>My Notes</h3>
+    <ul id="notesList"></ul>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
